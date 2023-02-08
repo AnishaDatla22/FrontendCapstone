@@ -12,7 +12,7 @@ function ConfirmedBooking() {
             <section className="confirm">
                 <img src={require("../icons_assets/confirm.jpg")} alt="confirm"/>
                 <h2> Booking Confirmed </h2>
-                <p> Hey {location.state.name}, your booking is confirmed and a confirmation email has been sent. Please find the reservation details below.</p>
+                <p> Hey {location.state.name}, your booking is confirmed and a confirmation email has been sent to {location.state.email}. Please find the reservation details below:</p>
                 <ul>
                     <li><b>Name: </b>{location.state.name} </li>
                     <li><b>Date: </b>{location.state.date} </li>
