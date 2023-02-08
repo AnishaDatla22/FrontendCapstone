@@ -5,7 +5,7 @@ import Reserve from "./Reserve.js";
 import { useReducer } from 'react';
 import { fetchAPI, submitAPI } from "./Api.js";
 import { useNavigate } from 'react-router-dom';
-import ConfirmedBooking from "./ConfirmedBooking.js";
+
 
 function Booking() {
 

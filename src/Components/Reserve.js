@@ -31,7 +31,7 @@ function Reserve(props) {
 
                 <label htmlFor="res-name">Name</label>
                 <input placeholder="Name" type="text" id="res-name" {...register("name", {required:true, minLength:3, maxLength:15})}/>
-                {errors.Name && <p style={{ color: "red" }}>Please enter minimum 3 characters</p>}
+                {errors.name && <p style={{ color: "red" }}>Please enter minimum 3 characters</p>}
 
                 <label htmlFor="res-email">Email</label>
                 <input placeholder="Email" type="email" id="res-email" {...register("email",{required: true, pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/})} />
