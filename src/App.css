@@ -69,31 +69,40 @@ button{
     grid-column: 1 / span 12;
     grid-row: 5 / span 6;
 }
-.menucard{
-    padding-top:20px;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    text-align:justify;
+.menucard {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
 }
+.card {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+
+}
+.cardimg{
+    width:290px;
+    height:200px;
+    border-radius:10px;
+}
+
 
 .review {
     padding: 5%;
     background-color: rgb(73,94,87);
     grid-column: 1 / span 12;
     grid-row: 11 / span 5;
+    color: white;
 }
-.reviewcard {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: safe center;
-    text-align: justify;
-}
-.review img{
+.reviewimg{
+    float: left;
+    width:40%;
     margin-top: 5%;
     margin-right: 5%;
+    border-radius: 200px;
 }
 
 
@@ -159,6 +168,25 @@ footer  img{
     
 }
 .Banner img{
+    max-width: 100%;
     padding: 2%;
-    border-radius: 30px;
+    border-radius: 50px;
+}
+
+.bookingform {
+    padding: 5%;
+    background-color: rgb(244,206,20);
+}
+
+.confirm {
+    padding:5%;
+    background-color: rgb(244,206,20);
+    text-align: justify;
+}
+
+.confirm img{
+    padding: 5px;
+    float:left;
+    width:50px;
+    border-radius:70px;
 }

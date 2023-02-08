@@ -5,16 +5,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Booking from './Components/Booking.js';
+import ConfirmedBooking from './Components/ConfirmedBooking.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-        
-
+    <React.StrictMode>
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App />}></Route>
                 <Route path="/booking" element={<Booking />}></Route>
+                <Route path="/confirm" element={<ConfirmedBooking />}></Route>
             </Routes>
         </BrowserRouter>
   </React.StrictMode>
